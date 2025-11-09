@@ -17,5 +17,5 @@ jobs:
         with:
           server: ftp.kzhukuk.com
           username: ${{ secrets.KAPLN_FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ secrets.KAPLN_FTP_PASSWORD }}
           server-dir: /public_html/wp-content/themes/kaplanzorer/
