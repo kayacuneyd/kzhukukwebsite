@@ -1,0 +1,21 @@
+@mixin animateIt($duration: 0.25s) {
+    -webkit-transition: all $duration ease;
+    -moz-transition: all $duration ease;
+    -o-transition: all $duration ease;
+    transition: all $duration ease;
+}
+
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin line-anim-mixin($path-number, $offset){
+    @keyframes line-anim-#{$path-number} {
+      0% { stroke-dashoffset: $offset; }
+      50% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: $offset; }
+    }
+  }

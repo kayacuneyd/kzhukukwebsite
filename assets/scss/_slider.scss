@@ -1,0 +1,91 @@
+/****************************************
+testimonial box slider
+****************************************/
+.box-slider {
+    .box-slide {
+        max-width: 80%;
+        padding: .4rem 0 50px 0;
+        &-inner {
+            height: max-content;
+            background-color: #fff;
+            outline: $color-grey-1 solid .1rem;
+            padding: 3.7rem 6.2rem;
+            margin: 0 .4rem;
+            @include animateIt;
+
+            h5 {
+                margin-top: 3.6rem;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        .box-slide {
+            max-width: 100%;
+        }
+    }
+}
+
+/****************************************
+icon box slider
+****************************************/
+.icon-box-slider {
+    .icon-box-slide {
+        max-width: 80%;
+        height: 100%;
+        padding: .4rem 0 50px 0;      
+
+        a {
+            color: inherit;
+        }
+
+        &-inner {
+            height: 100%;
+            background-color: #fff;
+            padding-top: 4.8rem;
+            padding-bottom: 4.8rem;
+            margin: 0 .4rem;
+            outline: transparent solid .1rem;
+            @include animateIt;
+
+            &:hover {
+                outline: $primary-color solid .4rem;
+                box-shadow: 0px 10px 10px 0px rgba(0,0,0,.1);
+                -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,.1);
+                -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,.1);
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        .icon-box-slide {
+            max-width: 100%;
+        }
+    }
+}
+
+/****************************************
+bullet pagination
+****************************************/
+.bullet-pagination {
+    display: flex;
+    align-items: center;
+    .bullet {
+        display: inline-block;
+        width: .8rem;
+        height: .8rem;
+        background-color: $color-grey-1;
+        border-radius: 50%;
+        @include animateIt;
+
+        &:nth-child(n+2) {
+            margin-left: .5rem;
+        }
+
+        &-active {
+            width: 1.2rem;
+            height: 1.2rem;
+            background-color: $primary-color;
+        }
+    }
+}

@@ -1,0 +1,172 @@
+
+
+.c {
+    &-primary {
+        color: $primary-color;
+    }
+    &-grey {
+        color: $color-grey;
+    }
+    &-light {
+        color: $color-light;
+    }
+    &-dark {
+        color: $color-dark;
+        &-2 {
+            color: $color-dark-2;
+        }
+    }
+    &-white {
+        color: #fff;
+    }
+}
+
+.b {
+    &-primary {
+        background-color: $primary-color;
+    }
+    &-primary-light-2 {
+        background-color: $primary-color-light-2;
+    }
+}
+
+.txt-upper {
+    text-transform: uppercase;
+}
+
+.mg-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txt-sm {
+    font-size: 1.4rem;
+    line-height: 3rem;
+    
+
+    &-1 {
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.heading {
+    &-lg {
+        font-size: 4.4rem;
+        line-height: 5.8rem;
+        &-1 {
+            font-size: 5rem;
+        }
+    }
+    &-sm {
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+    }
+    &-40 {
+        width: 40%;
+    }
+    &-50 {
+        width: 50%;
+    }
+    &-60 {
+        width: 60%;
+    }
+
+    @media (max-width: 992px) {
+        &-40, &-50 {
+            width: 80%;
+        }
+    }
+}
+
+.paragraph {
+    &-lg {
+        font-size: 2rem;
+    }
+    &-sm {
+        font-size: 1.4rem;
+        line-height: 4rem;
+    }
+}
+
+.image {
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.vertical-txt {
+    font-size: 22.6rem;
+    font-weight: 900;
+
+    &-wrapper {
+        &.right-align {
+            max-width: 100%;
+            width: max-content;
+            margin-left: auto;
+        }
+    }
+
+    @media (max-width: 992px) {
+        display: none;
+        &-wrapper {
+            //margin-top: 20rem;
+            &.right-align {
+                margin-left: 0;
+            }
+        }
+    }
+    
+    @supports (-webkit-text-stroke: .3rem $primary-color) {
+        -webkit-text-stroke: .3rem $primary-color;
+        -webkit-text-fill-color: white;
+    }
+
+    transform: rotate(90deg);
+}
+
+.f-w-400 {
+    font-weight: 400;
+}
+
+.f-w-500 {
+    font-weight: 500;
+}
+
+.ln-ht-auto {
+    line-height: auto;
+}
+
+.ln-ht-3 {
+    line-height: 3rem;
+}
+
+.ln-ht-34 {
+    line-height: 3.4rem;
+}
+
+.ln-ht-44 {
+    line-height: 4.4rem;
+}
+
+.lt-1 {
+    letter-spacing: .1rem;
+}
+
+
+.social-list {
+    li {
+        a {
+            i {
+                width: 2rem;
+                margin-right: .7rem;
+                text-align: center;
+            }
+        }
+    }
+}

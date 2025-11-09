@@ -1,0 +1,89 @@
+/****************************************
+icon circle
+****************************************/
+.icon-circle {
+    width: max-content;
+    position: relative;
+    height: 6rem;
+    
+    &::before {
+        content: '';
+        width: 7.5rem;
+        height: 7.5rem;
+        background-color: $primary-color-light;
+        border-radius: 50%;
+
+        position: absolute;
+    }
+
+    img {
+        position: relative;
+        z-index: 1;
+    }
+
+    &-xl {
+        height: auto;
+        &::before {
+            width: 18.5rem;
+            height: 18.5rem;
+            top: -.7rem;
+            left: 1rem;
+        }
+    }
+
+    &-lg {
+        height: 100px;
+        &::before {
+            top: 0;
+            left: 0;
+        }
+        &-1 {
+            height: 100px;
+            &::before {
+                top: -1rem;
+                left: -1.6rem;
+            }
+        }
+    }
+
+    &-sm {
+        &::before {
+            top: -2.1rem;
+            left: -2.1rem;
+        }
+    }
+}
+
+/****************************************
+icon box
+****************************************/
+.icon-box {
+    padding: 4rem 8rem;
+    h4 {
+        margin: 4.5rem 0 2.9rem 0;
+    }
+    @media (max-width: 992px) {
+        h4 {
+            margin: 3rem 0 1rem 0;
+        }
+    }
+}
+
+/****************************************
+icon text box
+****************************************/
+.icon-text-box {
+    &:not(&-large) {
+        h3 {
+            margin: 3.5rem 0 4rem 0;
+        }
+    }
+    &-large {
+        h4 {
+            margin: 6rem 0 2.4rem 0;
+        }
+    }
+    .link {
+        margin-top: 3rem;
+    }
+}

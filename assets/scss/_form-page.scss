@@ -1,0 +1,114 @@
+/****************************************
+form page
+****************************************/
+.form-page {
+    width: 100%;
+    min-height: calc(100vh - var(--border) * 2);
+    &-wrapper {
+        width: 100%;
+        min-height: calc(100vh - var(--border) * 2);
+
+        display: flex;
+    }
+
+    &-image {
+        flex: .6;
+        height: calc(100vh - 4rem);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        @media (max-width: 1600px) {
+            flex: .5;
+        }
+
+        @media (max-width: 1300px) {
+            flex: .4;
+        }
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &-content {
+        flex: .4;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - var(--border) * 2);
+        position: relative;
+        
+        &-wrapper {
+            width: 50%;
+        }
+
+        .logo {
+            position: absolute;
+            width: 50%;
+            top: 10rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 500;
+            color: $color-dark-2;
+            margin-bottom: 5.4rem;
+        }
+
+        form {
+            > *:nth-child(n+2) {
+                margin-top: 1rem;
+            }
+            .button {
+                width: 100%;
+                div {
+                    width: max-content;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .link-group {
+            margin-top: .9rem;
+
+
+            h5 {
+                font-size: 1.4rem;
+                color: $color-grey;
+            }
+            // a + h5 {
+            //     margin-top: -1rem;
+            // }
+        }
+
+        @media (max-width: 1600px) {
+            flex: .5;
+        }
+
+        @media (max-width: 1300px) {
+            flex: .6;
+            &-wrapper {
+                width: 60%;
+            }
+        }
+
+        @media (max-width: 992px) {
+            flex: 1;
+            .logo {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 992px) {
+            &-wrapper {
+                width: 70%;
+            }
+        }
+    }
+}
