@@ -10,7 +10,7 @@
         <div class="container">
             <div class="row">
                 <div class="testimonial-heading-content">
-                    <h2 class="f-w-400 heading-40">Referanslarımız</h2>
+                    <h2 class="f-w-400 heading-40">Referanslarımız!!!</h2>
                 </div>
             </div>
             <div class="row">
