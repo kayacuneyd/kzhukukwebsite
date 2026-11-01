@@ -1,0 +1,8 @@
+name: zzhello
+on:
+  push:
+jobs:
+  h:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello
